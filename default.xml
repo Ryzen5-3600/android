@@ -305,8 +305,8 @@
 <!-- END LINEAGEOS -->
 
 <!-- BEGIN NOOK TABLET -->
-  <project path="vendor/bn" name="proprietary_vendor_bn" remote="TheMuppets" revision="cm-13.0" />
-  <project path="vendor/ti" name="proprietary_vendor_ti" remote="TheMuppets" revision="master" />
+  <project path="vendor/bn" name="proprietary_vendor_bn" remote="themuppets" revision="cm-13.0" />
+  <project path="vendor/ti" name="proprietary_vendor_ti" remote="themuppets" revision="master" />
   <project path="kernel/bn/omap" name="android_kernel_bn_omap" remote="airend" />
   <project path="device/bn/common" name="android_device_bn_common" remote="airend" />
   <project path="device/bn/acclaim" name="android_device_bn_acclaim" remote="secretwolf98" revision="cm-13.0" />
