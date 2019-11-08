@@ -55,7 +55,7 @@
   <project path="external/brctl" name="LineageOS/android_external_brctl" />
   <project path="external/bzip2" name="LineageOS/android_external_bzip2" groups="pdk" />
   <project path="external/chromium-libpac" name="LineageOS/android_external_chromium-libpac" groups="pdk-fs" remote="github" />
-  <project path="external/chromium-webview" name="LineageOS/android_external_chromium-webview" clone-depth="1" />
+  <project path="external/chromium-webview" name="LineageOS/android_external_chromium-webview" clone-depth="1" revision="master" />
   <project path="external/cmsdk-api-coverage" name="LineageOS/android_external_cmsdk-api-coverage" />
   <project path="external/connectivity" name="LineageOS/android_external_connectivity" />
   <project path="external/curl" name="LineageOS/android_external_curl" />
@@ -129,6 +129,7 @@
   <project path="external/sonivox" name="LineageOS/android_external_sonivox" groups="pdk" />
   <project path="external/speex" name="LineageOS/android_external_speex" groups="pdk" />
   <project path="external/spongycastle" name="LineageOS/android_external_spongycastle" groups="pdk" />
+  <project path="external/sqlite" name="LineageOS/android_external_sqlite" groups="pdk" />
   <project path="external/stagefright-plugins" name="LineageOS/android_external_stagefright-plugins" />
   <project path="external/strace" name="LineageOS/android_external_strace" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/tcpdump" name="LineageOS/android_external_tcpdump" groups="pdk,pdk-cw-fs,pdk-fs" />
@@ -302,21 +303,19 @@
 
 <!-- CMSDK SAMPLES -->
   <project path="vendor/cmsdk/samples/weatherproviderservice/OpenWeatherMapProvider" name="LineageOS/android_packages_apps_OpenWeatherMapProvider" />
-  <project path="vendor/cmsdk/samples/weatherproviderservice/WundergroundWeatherProvider" name="LineageOS/android_packages_apps_WundergroundWeatherProvider" />
-  <project path="vendor/cmsdk/samples/weatherproviderservice/YahooWeatherProvider" name="LineageOS/android_packages_apps_YahooWeatherProvider" />
 <!-- END CMSDK SAMPLES -->
 
 <!-- END LINEAGEOS -->
-  
-  <!-- BEGIN NOOK TABLET --> 
+
+<!-- BEGIN NOOK TABLET --> 
   <project path="vendor/bn" name="proprietary_vendor_bn" remote="secretwolf98" /> 
   <project path="vendor/ti" name="proprietary_vendor_ti" remote="secretwolf98" revision="master" /> 
   <project path="kernel/bn/omap" name="android_kernel_bn_omap" remote="airend" /> 
   <project path="device/bn/common" name="android_device_bn_common" remote="airend" /> 
   <project path="device/bn/acclaim" name="android_device_bn_acclaim" remote="secretwolf98" revision="cm-13.0" /> 
   <project path="vendor/widevine" name="proprietary_vendor_widevine" remote="omap4-aosp" /> 
-  <!-- END NOOK TABLET -->
-
+<!-- END NOOK TABLET -->
+  
 <!-- BEGIN AOSP -->
   <project path="developers/build" name="platform/developers/build" remote="aosp" />
   <project path="developers/samples/android" name="platform/developers/samples/android" remote="aosp" />
@@ -440,7 +439,6 @@
   <project path="external/noto-fonts" name="platform/external/noto-fonts" groups="pdk" remote="aosp" />
   <project path="external/oauth" name="platform/external/oauth" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
   <project path="external/objenesis" name="platform/external/objenesis" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
-  <project path="external/opencv" name="platform/external/opencv" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
   <project path="external/openfst" name="platform/external/openfst" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
   <project path="external/owasp/sanitizer" name="platform/external/owasp/sanitizer" groups="pdk-fs" remote="aosp" />
   <project path="external/parameter-framework" name="platform/external/parameter-framework" groups="pdk-fs" remote="aosp" />
@@ -458,7 +456,6 @@
   <project path="external/slf4j" name="platform/external/slf4j" groups="pdk-fs" remote="aosp" />
   <project path="external/smali" name="platform/external/smali" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
   <project path="external/sonic" name="platform/external/sonic" groups="pdk" remote="aosp" />
-  <project path="external/sqlite" name="platform/external/sqlite" groups="pdk" remote="aosp" />
   <project path="external/squashfs-tools" name="platform/external/squashfs-tools" groups="pdk" remote="aosp" />
   <project path="external/srtp" name="platform/external/srtp" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
   <project path="external/svox" name="platform/external/svox" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
@@ -530,3 +527,5 @@
   <project path="sdk" name="platform/sdk" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
   <project path="system/gatekeeper" name="platform/system/gatekeeper" groups="pdk" remote="aosp" />
 <!-- END AOSP -->
+
+</manifest>
