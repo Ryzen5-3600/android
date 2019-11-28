@@ -17,14 +17,15 @@
 -->
 <manifest>
 	<project path="external/stlport" name="LineageOS/android_external_stlport" remote="github" revision="cm-14.1"/>
-	<project path="hardware/samsung" name="LineageOS/android_hardware_samsung" remote="github" revision="cm-14.1"/>
+	<project path="hardware/samsung" name="Viciouss/android_hardware_samsung" remote="github" revision="cm-14.1"/>
 	<project path="packages/apps/SamsungServiceMode" name="LineageOS/android_packages_apps_SamsungServiceMode" remote="github" revision="cm-14.1"/>
-	<project path="device/samsung/sprd-common" name="remilia15/android_device_samsung_sprd-common" remote="github" revision="cm-14.1"/>
-	<project path="device/samsung/grandprimeve3g" name="remilia15/android_device_samsung_grandprimeve3g" remote="github" revision="cm-14.1"/>
-	<project path="device/samsung/scx30g2-common" name="remilia15/android_device_samsung_scx30g2-common" remote="github" revision="cm-14.1"/>
-	<project path="device/samsung/scx35-common" name="remilia15/android_device_samsung_scx35-common" remote="github" revision="cm-14.1"/>
-	<project path="hardware/sprd" name="remilia15/android_hardware_sprd" remote="github" revision="cm-14.1"/>
-	<project path="kernel/samsung/sprd" name="remilia15/android_kernel_samsung_sprd-RZ" remote="github" revision="cm-14.1"/>
-	<project path="vendor/samsung/grandprimeve3g" name="remilia15/android_vendor_samsung_grandprimeve3g" remote="github" revision="cm-14.1"/>
-	<project path="vendor/samsung/scx30g2-common" name="remilia15/android_vendor_samsung_scx30g2-common" remote="github" revision="cm-14.1"/>
+	<project path="device/samsung/n80xx-common" name="Viciouss/android_device_samsung_n80xx-common" remote="github" revision="cm-14.1"/>
+	<project path="device/samsung/p4notelte-common" name="Viciouss/android_device_samsung_p4notelte-common" remote="github" revision="cm-14.1"/>
+	<project path="device/samsung/smdk4412-common" name="Viciouss/android_device_samsung_smdk4412-common" remote="github" revision="cm-14.1"/>
+	<project path="device/samsung/smdk4412-qcom-common" name="Viciouss/android_device_samsung_smdk4412-qcom-common" remote="github" revision="cm-14.1"/>
+	<project path="vendor/samsung" name="TheMuppets/proprietary_vendor_samsung" remote="github" revision="cm-14.1"/>
+	<project path="kernel/samsung/smdk4412" name="Viciouss/android_kernel_samsung_smdk4412" remote="github" revision="cm-14.1"/>
+	<project path="device/samsung/n8000" name="Viciouss/android_device_samsung_n8000" remote="github" revision="cm-14.1"/>
+	<project path="device/samsung/n8020" name="Viciouss/android_device_samsung_n8020" remote="github" revision="cm-14.1"/>
+	<project path="device/samsung/n8013" name="Viciouss/android_device_samsung_n8013" remote="github" revision="cm-14.1"/>
 </manifest>
