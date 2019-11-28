@@ -11,7 +11,7 @@ You can do this by using these commands:
     (Go to repo you are patching, make your changes and commit)
     cmgerrit <for(new)/changes(patch set)> <branch/change-id> 
 
-    repo start cm-13.0 .
+    repo start cm-14.1 .
     (Make your changes and commit)
     repo upload .
 Note: "." meaning current directory
