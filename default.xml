@@ -507,7 +507,7 @@
 
   <include name="snippets/cm.xml" />
   
-      <!-- Device-specific -->
+    <!-- Device-specific -->
   <include name="snippets/nooks.xml" />
   <include name="snippets/n80xx.xml" />
   <include name="snippets/grandprimeve3g.xml" />
