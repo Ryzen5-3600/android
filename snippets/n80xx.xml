@@ -24,8 +24,9 @@
 	<project path="device/samsung/smdk4412-common" name="Viciouss/android_device_samsung_smdk4412-common" remote="github" revision="cm-14.1"/>
 	<project path="device/samsung/smdk4412-qcom-common" name="Viciouss/android_device_samsung_smdk4412-qcom-common" remote="github" revision="cm-14.1"/>
 	<project path="vendor/samsung" name="TheMuppets/proprietary_vendor_samsung" remote="github" revision="cm-14.1"/>
-	<project path="kernel/samsung/smdk4412" name="Viciouss/android_kernel_samsung_smdk4412" remote="github" revision="cm-14.1"/>
+	<project path="kernel/samsung/smdk4412" name="secretwolf98/android_kernel_samsung_smdk4412" remote="github" revision="cm-14.1"/>
 	<project path="device/samsung/n8000" name="Viciouss/android_device_samsung_n8000" remote="github" revision="cm-14.1"/>
 	<project path="device/samsung/n8020" name="Viciouss/android_device_samsung_n8020" remote="github" revision="cm-14.1"/>
 	<project path="device/samsung/n8013" name="Viciouss/android_device_samsung_n8013" remote="github" revision="cm-14.1"/>
+	<project path="device/samsung/n8010" name="secretwolf98/android_device_samsung_n8010" remote="github" revision="cm-14.1"/>
 </manifest>
