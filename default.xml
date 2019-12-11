@@ -508,7 +508,6 @@
   <include name="snippets/cm.xml" />
   
     <!-- Device-specific -->
-  <include name="snippets/n80xx.xml" />
-  <include name="snippets/grandprimeve3g.xml" />
+  <include name="snippets/devices.xml" />
 
 </manifest>
