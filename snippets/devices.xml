@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+     Copyright (C) 2016 The Android Open Source Project
+     Copyright (C) 2016 The CyanogenMod Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<manifest>
+	<project path="external/stlport" name="LineageOS/android_external_stlport" remote="github" revision="cm-14.1"/>
+	<project path="hardware/samsung" name="Viciouss/android_hardware_samsung" remote="github" revision="cm-14.1"/>
+	<project path="packages/apps/SamsungServiceMode" name="LineageOS/android_packages_apps_SamsungServiceMode" remote="github" revision="cm-14.1"/>
+	<project path="device/samsung/n80xx-common" name="secretwolf98/android_device_samsung_n80xx-common" remote="github" revision="cm-14.1"/>
+	<project path="device/samsung/p4notelte-common" name="Viciouss/android_device_samsung_p4notelte-common" remote="github" revision="cm-14.1"/>
+	<project path="device/samsung/smdk4412-common" name="Viciouss/android_device_samsung_smdk4412-common" remote="github" revision="cm-14.1"/>
+	<project path="device/samsung/smdk4412-qcom-common" name="Viciouss/android_device_samsung_smdk4412-qcom-common" remote="github" revision="cm-14.1"/>
+	<project path="vendor/samsung" name="TheMuppets/proprietary_vendor_samsung" remote="github" revision="cm-14.1"/>
+	<project path="kernel/samsung/smdk4412" name="secretwolf98/android_kernel_samsung_smdk4412" remote="github" revision="cm-14.1"/>
+	<project path="device/samsung/n8000" name="secretwolf98/android_device_samsung_n8000" remote="github" revision="cm-14.1"/>
+	<project path="device/samsung/n8020" name="secretwolf98/android_device_samsung_n8020" remote="github" revision="cm-14.1"/>
+	<project path="device/samsung/n8013" name="secretwolf98/android_device_samsung_n8013" remote="github" revision="cm-14.1"/>
+	<project path="device/samsung/n8010" name="secretwolf98/android_device_samsung_n8010" remote="github" revision="cm-14.1"/>
+</manifest>
