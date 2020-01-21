@@ -21,7 +21,7 @@
 	<project path="packages/apps/SamsungServiceMode" name="LineageOS/android_packages_apps_SamsungServiceMode" remote="github" revision="cm-14.1"/>
 	<project path="device/samsung/n80xx-common" name="secretwolf98/android_device_samsung_n80xx-common" remote="github" revision="cm-14.1"/>
 	<project path="device/samsung/p4notelte-common" name="Viciouss/android_device_samsung_p4notelte-common" remote="github" revision="cm-14.1"/>
-	<project path="device/samsung/smdk4412-common" name="Viciouss/android_device_samsung_smdk4412-common" remote="github" revision="cm-14.1"/>
+	<project path="device/samsung/smdk4412-common" name="secretwolf98/android_device_samsung_smdk4412-common" remote="github" revision="cm-14.1"/>
 	<project path="device/samsung/smdk4412-qcom-common" name="Viciouss/android_device_samsung_smdk4412-qcom-common" remote="github" revision="cm-14.1"/>
 	<project path="vendor/samsung" name="TheMuppets/proprietary_vendor_samsung" remote="github" revision="cm-14.1"/>
 	<project path="kernel/samsung/smdk4412" name="secretwolf98/android_kernel_samsung_smdk4412" remote="github" revision="cm-14.1"/>
