@@ -39,5 +39,4 @@
 	<project path="vendor/samsung/scx30g2-common" name="secretwolf98/android_vendor_samsung_scx30g2-common" remote="github" revision="cm-14.1"/>
 	<project path="kernel/samsung/grandprimeve3g" name="secretwolf98/android_kernel_samsung_grandprimeve3g" remote="github" revision="cm-14.1"/>
 	<project path="packages/apps/CMUpdater" name="LineageOS/android_packages_apps_CMUpdater" remote="github" revision="cm-14.1"/>
-	<project path="packages/apps/Updater" name="LineageOS/android_packages_apps_Updater" remote="github" revision="cm-14.1"/>
 </manifest>
