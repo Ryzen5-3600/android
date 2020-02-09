@@ -18,7 +18,7 @@
 <manifest>
 	  <!-- LineageOS specific apps -->
 	<project path="external/stlport" name="LineageOS/android_external_stlport" remote="github" revision="lineage-15.1"/>
-	<project path="packages/apps/SamsungServiceMode" name="LineageOS/android_packages_apps_SamsungServiceMode" remote="github" revision="lineage-15.1"/>
+	<project path="packages/apps/SamsungServiceMode" name="LineageOS/android_packages_apps_SamsungServiceMode" remote="github" revision="cm-14.1"/>
 	
 	  <!-- Samsung vendor hardware code -->
 	<project path="vendor/samsung" name="TheMuppets/proprietary_vendor_samsung" remote="github" revision="lineage-15.1"/>
