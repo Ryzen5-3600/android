@@ -177,7 +177,7 @@
   <project path="external/libedit" name="platform/external/libedit" groups="pdk" remote="aosp" />
   <project path="external/libdaemon" name="platform/external/libdaemon" groups="pdk" remote="aosp" />
   <project path="external/libevent" name="platform/external/libevent" groups="pdk" remote="aosp" />
-  <project path="external/libexif" name="platform/external/libexif" groups="pdk" remote="aosp" />
+  <project path="external/libexif" name="LineageOS/android_external_libexif" groups="pdk" />
   <project path="external/libgsm" name="platform/external/libgsm" groups="pdk" remote="aosp" />
   <project path="external/libhevc" name="LineageOS/android_external_libhevc" groups="pdk" />
   <project path="external/libjpeg-turbo" name="LineageOS/android_external_libjpeg-turbo" groups="pdk" />
@@ -245,7 +245,7 @@
   <project path="external/pcre" name="platform/external/pcre" groups="pdk" remote="aosp" />
   <project path="external/pdfium" name="LineageOS/android_external_pdfium" groups="pdk" />
   <project path="external/piex" name="platform/external/piex" groups="pdk" remote="aosp" />
-  <project path="external/ppp" name="platform/external/ppp" groups="pdk" remote="aosp" />
+  <project path="external/ppp" name="LineageOS/android_external_ppp" groups="pdk" />
   <project path="external/proguard" name="platform/external/proguard" groups="pdk" remote="aosp" />
   <project path="external/protobuf" name="platform/external/protobuf" groups="pdk" remote="aosp" />
   <project path="external/regex-re2" name="platform/external/regex-re2" groups="pdk" remote="aosp" />
