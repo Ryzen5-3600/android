@@ -26,24 +26,24 @@
 	<project path="hardware/samsung" name="secretwolf98/android_hardware_samsung" remote="github" revision="cm-14.1"/>
 	
 	  <!-- n80xx -->
-	<project path="device/samsung/n80xx-common" name="secretwolf98/android_device_samsung_n80xx-common" remote="github" revision="cm-14.1"/>
-	<project path="kernel/samsung/smdk4412" name="secretwolf98/android_kernel_samsung_smdk4412" remote="github" revision="cm-14.1"/>
-	<project path="device/samsung/n8000" name="secretwolf98/android_device_samsung_n8000" remote="github" revision="cm-14.1"/>
-	<project path="device/samsung/n8020" name="secretwolf98/android_device_samsung_n8020" remote="github" revision="cm-14.1"/>
-	<project path="device/samsung/n8013" name="secretwolf98/android_device_samsung_n8013" remote="github" revision="cm-14.1"/>
-	<project path="device/samsung/n8010" name="secretwolf98/android_device_samsung_n8010" remote="github" revision="cm-14.1"/>
-	<project path="device/samsung/smdk4412-common" name="secretwolf98/android_device_samsung_smdk4412-common" remote="github" revision="cm-14.1"/>
+	<project path="device/samsung/n80xx-common" name="Ryzen5-3600/android_device_samsung_n80xx-common" remote="github" revision="cm-14.1"/>
+	<project path="kernel/samsung/smdk4412" name="Ryzen5-3600/android_kernel_samsung_smdk4412" remote="github" revision="cm-14.1"/>
+	<project path="device/samsung/n8000" name="Ryzen5-3600/android_device_samsung_n8000" remote="github" revision="cm-14.1"/>
+	<project path="device/samsung/n8020" name="Ryzen5-3600/android_device_samsung_n8020" remote="github" revision="cm-14.1"/>
+	<project path="device/samsung/n8013" name="Ryzen5-3600/android_device_samsung_n8013" remote="github" revision="cm-14.1"/>
+	<project path="device/samsung/n8010" name="Ryzen5-3600/android_device_samsung_n8010" remote="github" revision="cm-14.1"/>
+	<project path="device/samsung/smdk4412-common" name="Ryzen5-3600/android_device_samsung_smdk4412-common" remote="github" revision="cm-14.1"/>
 	<project path="device/samsung/p4notelte-common" name="Viciouss/android_device_samsung_p4notelte-common" remote="github" revision="cm-14.1"/>
 	<project path="device/samsung/smdk4412-qcom-common" name="html6405/android_device_samsung_smdk4412-qcom-common" remote="github" revision="master"/>
 	
 	  <!-- grandprimeve3g -->
-	<project path="device/samsung/sprd-common" name="secretwolf98/android_device_samsung_sprd-common" remote="github" revision="cm-14.1"/>
-	<project path="device/samsung/grandprimeve3g" name="secretwolf98/android_device_samsung_grandprimeve3g" remote="github" revision="cm-14.1"/>
-	<project path="device/samsung/scx30g2-common" name="secretwolf98/android_device_samsung_scx30g2-common" remote="github" revision="cm-14.1"/>
-	<project path="device/samsung/scx35-common" name="secretwolf98/android_device_samsung_scx35-common" remote="github" revision="cm-14.1"/>
-	<project path="hardware/sprd" name="secretwolf98/android_hardware_sprd" remote="github" revision="cm-14.1"/>
-	<project path="kernel/samsung/sprd" name="secretwolf98/android_kernel_samsung_grandprimeve3g" remote="github" revision="cm-14.1"/>
-	<project path="kernel/samsung/grandprimeve3g" name="secretwolf98/android_kernel_samsung_grandprimeve3g" remote="github" revision="cm-14.1"/>
-	<project path="vendor/samsung/grandprimeve3g" name="secretwolf98/android_vendor_samsung_grandprimeve3g" remote="github" revision="cm-14.1"/>
-	<project path="vendor/samsung/scx30g2-common" name="secretwolf98/android_vendor_samsung_scx30g2-common" remote="github" revision="cm-14.1"/>
+	<project path="device/samsung/sprd-common" name="Ryzen5-3600/android_device_samsung_sprd-common" remote="github" revision="cm-14.1"/>
+	<project path="device/samsung/grandprimeve3g" name="Ryzen5-3600/android_device_samsung_grandprimeve3g" remote="github" revision="cm-14.1"/>
+	<project path="device/samsung/scx30g2-common" name="Ryzen5-3600/android_device_samsung_scx30g2-common" remote="github" revision="cm-14.1"/>
+	<project path="device/samsung/scx35-common" name="Ryzen5-3600/android_device_samsung_scx35-common" remote="github" revision="cm-14.1"/>
+	<project path="hardware/sprd" name="Ryzen5-3600/android_hardware_sprd" remote="github" revision="cm-14.1"/>
+	<project path="kernel/samsung/sprd" name="Ryzen5-3600/android_kernel_samsung_grandprimeve3g" remote="github" revision="cm-14.1"/>
+	<project path="kernel/samsung/grandprimeve3g" name="Ryzen5-3600/android_kernel_samsung_grandprimeve3g" remote="github" revision="cm-14.1"/>
+	<project path="vendor/samsung/grandprimeve3g" name="Ryzen5-3600/android_vendor_samsung_grandprimeve3g" remote="github" revision="cm-14.1"/>
+	<project path="vendor/samsung/scx30g2-common" name="Ryzen5-3600/android_vendor_samsung_scx30g2-common" remote="github" revision="cm-14.1"/>
 </manifest>
