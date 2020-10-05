@@ -20,7 +20,7 @@
 	<project path="external/stlport" name="LineageOS/android_external_stlport" remote="github" revision="lineage-15.1"/>
 	
 	  <!-- Barnes & Noble vendor hardware code -->
-	<project path="vendor/bn/st18c10bnn" name="Ryzen5-3600/android_vendor_bn_st18c10bnn" remote="github" revision="master"/>
+	<project path="vendor/bn/st18c10bnn" name="turtleletortue/android_vendor_bn_st18c10bnn" remote="github" revision="master"/>
 	
 	  <!-- st18c10bnn -->
 	<project path="device/bn/st18c10bnn" name="Ryzen5-3600/android_device_bn_st18c10bnn" remote="github" revision="lineage-15.1"/>
