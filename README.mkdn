@@ -51,7 +51,7 @@ chmod a+x ~/bin/repo
 
 (Put the ~/bin directory in your path of execution
 					=
-					
+					=
 				 In recent versions of Ubuntu, ~/bin should already be in your PATH. You can check this by opening nano ~/.profile with a text editor and verifying the following code exists (add it if it is missing): 
 				 
 
@@ -70,6 +70,7 @@ repo init -u git://github.com/Ryzen5-3600/android.git -b cm-14.1
 
 (keep an eye on the terminal, because a message or 2 will pop up, follow what it says to continue on)
 
+=
 				(You must have a validated GitHub account to pass this step and you must use the GitHub account details during this step)
 
 repo sync -c -j4 --force-sync --no-tags --no-clone-bundle
