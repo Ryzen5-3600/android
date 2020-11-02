@@ -1,50 +1,77 @@
-LineageOS
-===========
+How to compile LineageOS 14.1 for grandprimeve3g
+================================================
 
-Submitting Patches
-------------------
-Patches are always welcome!  Please submit your patches via LineageOS Gerrit!
-You can do this by using these commands:
+nano ~/.bashrc
 
-    (From root android directory)
-    . build/envsetup.sh
-    (Go to repo you are patching, make your changes and commit)
-    cmgerrit <for(new)/changes(patch set)> <branch/change-id> 
+Code to insert:
 
-    repo start cm-14.1 .
-    (Make your changes and commit)
-    repo upload .
-Note: "." meaning current directory
-For more help on using this tool, use this command: repo help upload
-
-Make your changes and commit with a detailed message, starting with what you are working with (i.e. vision: Update Kernel)
-Commit your patches in a single commit. Squash multiple commit using this command: git rebase -i HEAD~<# of commits>
-
-To view the status of your and others' patches, visit [LineageOS Code Review](http://review.lineageos.org/)
+export USE_CCACHE=1
+export CCACHE_COMPRESS=1
+export WITH_SU=true
+export LC_ALL=C
+export USE_NINJA=false
+export JACK_SERVER_VM_ARGUMENTS="-Dfile.encoding=UTF-8 -XX:+TieredCompilation ->
+./prebuilts/sdk/tools/jack-admin kill-server
+./prebuilts/sdk/tools/jack-admin start-server
+jack-admin kill-server && jack-admin start-server
 
 
-Getting Started
----------------
+Reload the terminal:
 
-To get started with Android/LineageOS, you'll need to get
-familiar with [Git and Repo](http://source.android.com/source/using-repo.html).
+source ~/.bashrc 
 
-To initialize your local repository using the LineageOS trees, use a command like this:
 
-    repo init -u git://github.com/Ryzen5-3600/android.git -b cm-14.1
+Download and install the required packages:
 
-Then to sync up:
+sudo apt-get install bc bison build-essential ccache curl flex g++-multilib gcc-multilib git gnupg gperf imagemagick lib32ncurses5-dev lib32readline-dev lib32z1-dev liblz4-tool libncurses5-dev libsdl1.2-dev libssl-dev libwxgtk3.0-gtk3-dev libxml2 libxml2-utils lzop pngcrush rsync schedtool squashfs-tools xsltproc zip zlib1g-dev maven openjdk-8-jdk
 
-    repo sync
+(use   " sudo update-alternatives --config java "   to set jdk 8 as default)
 
-Please see the [LineageOS Wiki](http://wiki.lineageos.org/) for building instructions.
 
-For more information on this Github Organization and how it is structured, 
-please [read the wiki article](http://wiki.lineageos.org/w/Github_Organization)
+Setup ccache to speed up builds, must be done after repo sync:
 
-Buildbot
---------
+ccache -M 100G
 
-All supported devices are built nightly and periodically as changes are committed to ensure the source trees remain buildable.
 
-You can view the current build statuses at [LineageOS Jenkins](http://jenkins.lineageos.org/)
+mkdir -p ~/bin
+
+mkdir -p ~/android/lineage
+
+curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
+
+chmod a+x ~/bin/repo
+
+(Put the ~/bin directory in your path of execution
+					In recent versions of Ubuntu, ~/bin should already be in your PATH. You can check this by opening nano ~/.profile with a text editor and verifying the following code exists (add it if it is missing):
+
+						# set PATH so it includes user's private bin if it exists
+						if [ -d "$HOME/bin" ] ; then
+    						    PATH="$HOME/bin:$PATH"
+						fi
+
+=
+					Then, run source ~/.profile to update your environment
+                    
+                    
+cd ~/android/lineage                  
+
+repo init -u git://github.com/Ryzen5-3600/android.git -b cm-14.1
+
+(keep an eye on the terminal, because a message or 2 will pop up, follow what it says to continue on)
+				(You must have a validated GitHub account to pass this step and you must use the GitHub account details during this step)
+
+repo sync -c -j4 --force-sync --no-tags --no-clone-bundle
+
+
+
+After repo sync is done, use:
+
+source build/envsetup.sh
+
+lunch lineage_grandprimeve3g-userdebug
+
+make -j4 bacon
+
+
+		(If the build is successful, it will be found in: android/lineage/out/target/product/grandprimeve3g/lineage-14.1-xxxxxxxx-UNOFFICIAL-grandprimeve3g.zip)
+						(note: xxxxxxxx is the date... example: 20201101)
