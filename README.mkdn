@@ -6,13 +6,21 @@ nano ~/.bashrc
 Code to insert:
 
 export USE_CCACHE=1
+
 export CCACHE_COMPRESS=1
+
 export WITH_SU=true
+
 export LC_ALL=C
+
 export USE_NINJA=false
+
 export JACK_SERVER_VM_ARGUMENTS="-Dfile.encoding=UTF-8 -XX:+TieredCompilation ->
+
 ./prebuilts/sdk/tools/jack-admin kill-server
+
 ./prebuilts/sdk/tools/jack-admin start-server
+
 jack-admin kill-server && jack-admin start-server
 
 
