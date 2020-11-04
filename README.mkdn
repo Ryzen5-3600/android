@@ -1,5 +1,5 @@
-How to compile LineageOS 14.1 for grandprimeve3g
-================================================
+How to compile LineageOS 16.0 for n8013
+=======================================
 
 nano ~/.bashrc
 
@@ -60,7 +60,7 @@ chmod a+x ~/bin/repo
                     
 cd ~/android/lineage                  
 
-repo init -u git://github.com/Ryzen5-3600/android.git -b cm-14.1
+repo init -u git://github.com/Ryzen5-3600/android.git -b lineage-16.0
 
 (keep an eye on the terminal, because a message or 2 will pop up, follow what it says to continue on)
 
@@ -75,10 +75,10 @@ After repo sync is done, use:
 
 source build/envsetup.sh
 
-lunch lineage_grandprimeve3g-userdebug
+lunch lineage_n8013-userdebug
 
 make -j4 bacon
 
 =
-		(If the build is successful, it will be found in: android/lineage/out/target/product/grandprimeve3g/lineage-14.1-xxxxxxxx-UNOFFICIAL-grandprimeve3g.zip)
-						(note: xxxxxxxx is the date... example: 20201101)
+		(If the build is successful, it will be found in: android/lineage/out/target/product/grandprimeve3g/lineage-16.0-xxxxxxxx-UNOFFICIAL-n8013.zip)
+						(note: xxxxxxxx is the date... example: 20201104)
