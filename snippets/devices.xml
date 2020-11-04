@@ -17,7 +17,7 @@
 -->
 <manifest>
 	  <!-- LineageOS specific apps -->
-	<project path="packages/apps/SamsungServiceMode" name="LineageOS/android_packages_apps_SamsungServiceMode" remote="github" revision="lineage-16.0"/>
+	<project path="packages/apps/SamsungServiceMode" name="LineageOS/android_packages_apps_SamsungServiceMode" remote="github" revision="cm-14.1"/>
 	
 	  <!-- Samsung vendor hardware code -->
 	<project path="vendor/samsung" name="TheMuppets/proprietary_vendor_samsung" remote="github" revision="lineage-16.0"/>
@@ -27,7 +27,7 @@
 	<project path="device/samsung/n8013" name="Ryzen5-3600/android_device_samsung_n8013" remote="github" revision="lineage-16.0"/>
 	<project path="device/samsung/n80xx-common" name="html6405/android_device_samsung_n80xx-common" remote="github" revision="lineage-16.0"/>
 	<project path="kernel/samsung/smdk4412" name="html6405/android_kernel_samsung_smdk4412" remote="github" revision="lineage-16.0"/>
-	<project path="kernel/samsung/n80xx" name="html6405/android_kernel_samsung_n80xx" remote="github" revision="lineage-16.0"/>
+	<project path="kernel/samsung/n80xx" name="html6405/android_kernel_samsung_n80xx" remote="github" revision="lineage-14.1"/>
 	<project path="device/samsung/smdk4412-common" name="html6405/android_device_samsung_smdk4412-common" remote="github" revision="lineage-16.0"/>
 	<project path="device/samsung/smdk4412-qcom-common" name="html6405/android_device_samsung_smdk4412-qcom-common" remote="github" revision="master"/>
 </manifest>
