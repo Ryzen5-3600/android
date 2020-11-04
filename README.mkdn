@@ -80,5 +80,5 @@ lunch lineage_n8013-userdebug
 make -j4 bacon
 
 =
-		(If the build is successful, it will be found in: android/lineage/out/target/product/grandprimeve3g/lineage-16.0-xxxxxxxx-UNOFFICIAL-n8013.zip)
+		(If the build is successful, it will be found in: android/lineage/out/target/product/n8013/lineage-16.0-xxxxxxxx-UNOFFICIAL-n8013.zip)
 						(note: xxxxxxxx is the date... example: 20201104)
