@@ -46,7 +46,7 @@ chmod a+x ~/bin/repo
 (Put the ~/bin directory in your path of execution
 					=
 					=
-				 In recent versions of Ubuntu, ~/bin should already be in your PATH. You can check this by opening nano ~/.profile with a text editor and verifying the following code exists (add it if it is missing): 
+				 In recent versions of Ubuntu, ~/bin should already be in your PATH. You can check this by opening nano ~/.profile with a text editor and verifying the following code exists (add it if it is missing or if the repo command doesn't work): 
 				 
 
 						# set PATH so it includes user's private bin if it exists
