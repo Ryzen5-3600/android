@@ -24,7 +24,7 @@
 	  <!-- n8013 -->
 	<project path="device/samsung/n8013" name="Ryzen5-3600/android_device_samsung_n8013" remote="github" revision="lineage-16.0"/>
 	<project path="device/samsung/n80xx-common" name="Ryzen5-3600/android_device_samsung_n80xx-common" remote="github" revision="lineage-16.0"/>
-	<project path="kernel/samsung/smdk4412" name="LineageOS/android_kernel_samsung_smdk4412" remote="github" revision="lineage-17.1"/>
+	<project path="kernel/samsung/smdk4412" name="LineageOS/android_kernel_samsung_smdk4412" remote="github" revision="lineage-17.0"/>
 	<project path="kernel/samsung/n80xx" name="html6405/android_kernel_samsung_n80xx" remote="github" revision="lineage-14.1"/>
 	<project path="device/samsung/smdk4412-common" name="Ryzen5-3600/android_device_samsung_smdk4412-common" remote="github" revision="lineage-16.0"/>
 	<project path="device/samsung/smdk4412-qcom-common" name="html6405/android_device_samsung_smdk4412-qcom-common" remote="github" revision="master"/>
