@@ -1,4 +1,4 @@
-How to compile LineageOS 16.0 for n8013
+How to compile LineageOS 167.1 for n8013
 =======================================
 
 nano ~/.bashrc
@@ -60,7 +60,7 @@ chmod a+x ~/bin/repo
                     
 cd ~/android/lineage                  
 
-repo init -u git://github.com/Ryzen5-3600/android.git -b lineage-16.0
+repo init -u git://github.com/Ryzen5-3600/android.git -b lineage-17.1
 
 (keep an eye on the terminal, because a message or 2 will pop up, follow what it says to continue on)
 
@@ -80,5 +80,5 @@ lunch lineage_n8013-userdebug
 make -j4 bacon
 
 =
-		(If the build is successful, it will be found in: android/lineage/out/target/product/n8013/lineage-16.0-xxxxxxxx-UNOFFICIAL-n8013.zip)
-						(note: xxxxxxxx is the date... example: 20201104)
+		(If the build is successful, it will be found in: android/lineage/out/target/product/n8013/lineage-17.1-xxxxxxxx-UNOFFICIAL-n8013.zip)
+						(note: xxxxxxxx is the date... example: 20201109)
