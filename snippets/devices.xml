@@ -24,7 +24,7 @@
 	<project path="vendor/samsung" name="TheMuppets/proprietary_vendor_samsung" remote="github" revision="cm-14.1"/>
 	<project path="hardware/samsung" name="LineageOS/android_hardware_samsung" remote="github" revision="cm-14.1"/>
 	
-		  <!-- n80xx -->
+		  <!-- n8013 -->
 	<project path="device/samsung/n80xx-common" name="Ryzen5-3600/android_device_samsung_n80xx-common" remote="github" revision="cm-14.1"/>
 	<project path="kernel/samsung/smdk4412" name="Ryzen5-3600/android_kernel_samsung_smdk4412" remote="github" revision="cm-14.1"/>
 	<project path="device/samsung/n8013" name="Ryzen5-3600/android_device_samsung_n8013" remote="github" revision="cm-14.1"/>
