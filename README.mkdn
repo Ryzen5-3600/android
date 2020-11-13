@@ -1,5 +1,5 @@
-How to compile LineageOS 14.1 for grandprimeve3g
-================================================
+How to compile LineageOS 14.1 for grandprimeve3g & n8013
+========================================================
 
 nano ~/.bashrc
 
@@ -44,9 +44,8 @@ curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
 chmod a+x ~/bin/repo
 
 (Put the ~/bin directory in your path of execution
-					=
-					=
-				 (Put the ~/bin directory in your path of execution = = In recent versions of Ubuntu, ~/bin should already be in your PATH. You can check this by opening nano ~/.profile with a text editor and verifying the following code exists (add it if it is missing or if the repo command doesn't work):
+
+(Put the ~/bin directory in your path of execution = = In recent versions of Ubuntu, ~/bin should already be in your PATH. You can check this by opening nano ~/.profile with a text editor and verifying the following code exists (add it if it is missing or if the repo command doesn't work):
 				 
 
 						# set PATH so it includes user's private bin if it exists
@@ -54,8 +53,8 @@ chmod a+x ~/bin/repo
     						    PATH="$HOME/bin:$PATH"
 						fi
 
-=
-					Then, run source ~/.profile to update your environment
+
+Then, run source ~/.profile to update your environment
                     
                     
 cd ~/android/lineage                  
@@ -64,8 +63,7 @@ repo init -u git://github.com/Ryzen5-3600/android.git -b cm-14.1
 
 (keep an eye on the terminal, because a message or 2 will pop up, follow what it says to continue on)
 
-=
-				(You must have a validated GitHub account to pass this step and you must use the GitHub account details during this step)
+(You must have a validated GitHub account to pass this step and you must use the GitHub account details during this step)
 
 repo sync -c -j4 --force-sync --no-tags --no-clone-bundle
 
@@ -77,8 +75,13 @@ source build/envsetup.sh
 
 lunch lineage_grandprimeve3g-userdebug
 
+lunch lineage_n8013-userdebug
+
 make -j4 bacon
 
-=
-		(If the build is successful, it will be found in: android/lineage/out/target/product/grandprimeve3g/lineage-14.1-xxxxxxxx-UNOFFICIAL-grandprimeve3g.zip)
-						(note: xxxxxxxx is the date... example: 20201101)
+
+(If the build is successful, it will be found in: android/lineage/out/target/product/grandprimeve3g/lineage-14.1-xxxxxxxx-UNOFFICIAL-grandprimeve3g.zip)
+						(note: xxxxxxxx is the date... example: 20201113)
+						
+(If the build is successful, it will be found in: android/lineage/out/target/product/n8013/lineage-14.1-xxxxxxxx-UNOFFICIAL-n8013.zip)
+						(note: xxxxxxxx is the date... example: 20201113)
