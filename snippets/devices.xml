@@ -21,7 +21,7 @@
 	<project path="packages/apps/SamsungServiceMode" name="LineageOS/android_packages_apps_SamsungServiceMode" remote="github" revision="cm-14.1"/>
 	
 	  <!-- Samsung vendor hardware code -->
-	<project path="vendor/samsung" name="TheMuppets/proprietary_vendor_samsung" remote="github" revision="cm-14.1"/>
+	<project path="vendor/samsung" name="Ryzen5-3600/proprietary_vendor_samsung" remote="github" revision="cm-14.1"/>
 	<project path="hardware/samsung" name="LineageOS/android_hardware_samsung" remote="github" revision="cm-14.1"/>
 	
 		  <!-- n8013 -->
