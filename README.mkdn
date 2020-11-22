@@ -1,50 +1,82 @@
-LineageOS
-===========
+How to compile LineageOS 15.1 for st18c10bnn
+============================================
 
-Submitting Patches
-------------------
-Patches are always welcome!  Please submit your patches via LineageOS Gerrit!
-You can do this by using these commands:
+nano ~/.bashrc
 
-    (From root android directory)
-    . build/envsetup.sh
-    (Go to repo you are patching, make your changes and commit)
-    cmgerrit <for(new)/changes(patch set)> <branch/change-id> 
+Code to insert:
 
-    repo start lineage-15.1 .
-    (Make your changes and commit)
-    repo upload .
-Note: "." meaning current directory
-For more help on using this tool, use this command: repo help upload
+export USE_CCACHE=1
 
-Make your changes and commit with a detailed message, starting with what you are working with (i.e. vision: Update Kernel)
-Commit your patches in a single commit. Squash multiple commit using this command: git rebase -i HEAD~<# of commits>
+export CCACHE_COMPRESS=1
 
-To view the status of your and others' patches, visit [LineageOS Code Review](http://review.lineageos.org/)
+export WITH_SU=true
+
+export LC_ALL=C
+
+export USE_NINJA=false
 
 
-Getting Started
----------------
 
-To get started with Android/LineageOS, you'll need to get
-familiar with [Git and Repo](http://source.android.com/source/using-repo.html).
+Reload the terminal:
 
-To initialize your local repository using the LineageOS trees, use a command like this:
+source ~/.bashrc 
 
-    repo init -u git://github.com/Ryzen5-3600/android.git -b lineage-15.1
 
-Then to sync up:
+Download and install the required packages:
 
-    repo sync
+sudo apt-get install bc bison build-essential ccache curl flex g++-multilib gcc-multilib git gnupg gperf imagemagick lib32ncurses5-dev lib32readline-dev lib32z1-dev liblz4-tool libncurses5-dev libsdl1.2-dev libssl-dev libwxgtk3.0-gtk3-dev libxml2 libxml2-utils lzop pngcrush rsync schedtool squashfs-tools xsltproc zip zlib1g-dev maven openjdk-8-jdk libncurses5 libtinfo5 gpm:i386 libgpm2:i386 libncurses5:i386 libtinfo5:i386 adb android-libadb android-libbase android-libboringssl android-libcrypto-utils android-libcutils android-liblog android-sdk-platform-tools-common python
 
-Please see the [LineageOS Wiki](http://wiki.lineageos.org/) for building instructions.
 
-For more information on this Github Organization and how it is structured, 
-please [read the wiki article](http://wiki.lineageos.org/w/Github_Organization)
+(use   " sudo update-alternatives --config java "   to set jdk 8 as default)
 
-Buildbot
---------
 
-All supported devices are built nightly and periodically as changes are committed to ensure the source trees remain buildable.
+Setup ccache to speed up builds, must be done after repo sync:
 
-You can view the current build statuses at [LineageOS Jenkins](http://jenkins.lineageos.org/)
+ccache -M 100G
+
+
+mkdir -p ~/bin
+
+mkdir -p ~/android/lineage
+
+curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
+
+chmod a+x ~/bin/repo
+
+(Put the ~/bin directory in your path of execution
+
+In recent versions of Ubuntu, ~/bin should already be in your PATH. You can check this by opening nano ~/.profile with a text editor and verifying the following code exists (add it if it is missing or if the repo command doesn't work): 
+				 
+
+						# set PATH so it includes user's private bin if it exists
+						if [ -d "$HOME/bin" ] ; then
+    						    PATH="$HOME/bin:$PATH"
+						fi
+
+
+Then, run source ~/.profile to update your environment
+                    
+                    
+cd ~/android/lineage                  
+
+repo init -u git://github.com/Ryzen5-3600/android.git -b lineage-15.1
+
+(keep an eye on the terminal, because a message or 2 will pop up, follow what it says to continue on)
+
+(You must have a validated GitHub account to pass this step and you must use the GitHub account details during this step)
+
+repo sync -c -j4 --force-sync --no-tags --no-clone-bundle
+
+
+
+After repo sync is done, use:
+
+source build/envsetup.sh
+
+lunch lineage_st18c10bnn-userdebug
+
+make -j4 bacon
+
+
+(If the build is successful, it will be found in: android/lineage/out/target/product/st18c10bnn/lineage-15.1-xxxxxxxx-UNOFFICIAL-st18c10bnn.zip)
+(note: xxxxxxxx is the date... example: 20201122)
