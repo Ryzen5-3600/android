@@ -78,5 +78,5 @@ lunch lineage_gta4xlwifi-userdebug
 make -j4 bacon
 
 
-(If the build is successful, it will be found in: android/lineage/out/target/product/n8013/lineage-18.0-xxxxxxxx-UNOFFICIAL-gta4xlwifi.zip)
-(note: xxxxxxxx is the date... example: 20201119)
+(If the build is successful, it will be found in: android/lineage/out/target/product/gta4xlwifi/lineage-18.0-xxxxxxxx-UNOFFICIAL-gta4xlwifi.zip)
+(note: xxxxxxxx is the date... example: 20201122)
