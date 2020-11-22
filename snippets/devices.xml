@@ -24,6 +24,7 @@
 	
 	  <!-- gta4xlwifi -->
 	<project path="device/samsung/gta4xlwifi" name="gta4xl/android_device_samsung_gta4xlwifi" remote="github" revision="lineage-18.0"/>
+	<project path="device/samsung/gta4xl-common" name="gta4xl/android_device_samsung_gta4xl-common" remote="github" revision="lineage-18.0"/>
 	<project path="vendor/samsung/slsi/sepolicy" name="gta4xl/android_device_samsung_slsi_sepolicy" remote="github" revision="lineage-18.0"/>
 	<project path="kernel/samsung/gta4xl" name="gta4xl/android_kernel_samsung_gta4xl" remote="github" revision="lineage-18.0"/>
 </manifest>
