@@ -73,6 +73,8 @@ After repo sync is done, use:
 
 source build/envsetup.sh
 
+repopick 288285
+
 lunch lineage_gta4xlwifi-userdebug
 
 make -j4 bacon
