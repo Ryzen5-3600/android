@@ -24,7 +24,7 @@ source ~/.bashrc
 
 Download and install the required packages:
 
-sudo apt-get install bc bison build-essential ccache curl flex g++-multilib gcc-multilib git gnupg gperf imagemagick lib32ncurses5-dev lib32readline-dev lib32z1-dev liblz4-tool libncurses5-dev libsdl1.2-dev libssl-dev libwxgtk3.0-gtk3-dev libxml2 libxml2-utils lzop pngcrush rsync schedtool squashfs-tools xsltproc zip zlib1g-dev maven openjdk-8-jdk libncurses5 libtinfo5 gpm:i386 libgpm2:i386 libncurses5:i386 libtinfo5:i386 adb android-libadb android-libbase android-libboringssl android-libcrypto-utils android-libcutils android-liblog android-sdk-platform-tools-common python
+sudo apt-get install bc bison build-essential ccache curl flex g++-multilib gcc-multilib git gnupg gperf imagemagick lib32ncurses5-dev lib32readline-dev lib32z1-dev liblz4-tool libncurses5-dev libsdl1.2-dev libssl-dev libwxgtk3.0-gtk3-dev libxml2 libxml2-utils lzop pngcrush rsync schedtool squashfs-tools xsltproc zip zlib1g-dev maven openjdk-8-jdk libncurses5 libtinfo5 gpm:i386 libgpm2:i386 libncurses5:i386 libtinfo5:i386 adb android-libadb android-libbase android-libboringssl android-libcrypto-utils android-libcutils android-liblog android-sdk-platform-tools-common python fastboot
 
 
 (use   " sudo update-alternatives --config java "   to set jdk 8 as default)
@@ -44,9 +44,8 @@ curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
 chmod a+x ~/bin/repo
 
 (Put the ~/bin directory in your path of execution
-					=
-					=
-				 In recent versions of Ubuntu, ~/bin should already be in your PATH. You can check this by opening nano ~/.profile with a text editor and verifying the following code exists (add it if it is missing or if the repo command doesn't work): 
+
+In recent versions of Ubuntu, ~/bin should already be in your PATH. You can check this by opening nano ~/.profile with a text editor and verifying the following code exists (add it if it is missing or if the repo command doesn't work): 
 				 
 
 						# set PATH so it includes user's private bin if it exists
@@ -54,8 +53,7 @@ chmod a+x ~/bin/repo
     						    PATH="$HOME/bin:$PATH"
 						fi
 
-=
-					Then, run source ~/.profile to update your environment
+Then, run source ~/.profile to update your environment
                     
                     
 cd ~/android/lineage                  
@@ -64,8 +62,7 @@ repo init -u git://github.com/Ryzen5-3600/android.git -b lineage-16.0
 
 (keep an eye on the terminal, because a message or 2 will pop up, follow what it says to continue on)
 
-=
-				(You must have a validated GitHub account to pass this step and you must use the GitHub account details during this step)
+(You must have a validated GitHub account to pass this step and you must use the GitHub account details during this step)
 
 repo sync -c -j4 --force-sync --no-tags --no-clone-bundle
 
@@ -79,6 +76,5 @@ lunch lineage_n8013-userdebug
 
 make -j4 bacon
 
-=
-		(If the build is successful, it will be found in: android/lineage/out/target/product/n8013/lineage-16.0-xxxxxxxx-UNOFFICIAL-n8013.zip)
-						(note: xxxxxxxx is the date... example: 20201104)
+(If the build is successful, it will be found in: android/lineage/out/target/product/n8013/lineage-16.0-xxxxxxxx-UNOFFICIAL-n8013.zip)
+						(note: xxxxxxxx is the date... example: 20201123)
