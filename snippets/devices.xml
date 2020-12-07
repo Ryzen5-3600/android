@@ -29,7 +29,7 @@
 	
 	  <!-- gta4xlwifi -->
 	<project path="device/samsung/gta4xlwifi" name="Ryzen5-3600/android_device_samsung_gta4xlwifi" remote="github" revision="lineage-17.1"/>
-	<project path="device/samsung/gta4xl-common" name="gta4xl/android_device_samsung_gta4xl-common" remote="github" revision="lineage-17.1"/>
+	<project path="device/samsung/gta4xl-common" name="Ryzen5-3600/android_device_samsung_gta4xl-common" remote="github" revision="lineage-17.1"/>
 	<project path="kernel/samsung/gta4xl" name="gta4xl/android_kernel_samsung_gta4xl" remote="github" revision="lineage-17.1"/>
 	
 	  <!-- Open Gapps -->
