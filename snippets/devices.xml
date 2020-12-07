@@ -31,4 +31,13 @@
 	<project path="device/samsung/gta4xlwifi" name="gta4xl/android_device_samsung_gta4xlwifi" remote="github" revision="lineage-17.1"/>
 	<project path="device/samsung/gta4xl-common" name="gta4xl/android_device_samsung_gta4xl-common" remote="github" revision="lineage-17.1"/>
 	<project path="kernel/samsung/gta4xl" name="gta4xl/android_kernel_samsung_gta4xl" remote="github" revision="lineage-17.1"/>
+	
+	  <!-- Open Gapps -->
+	<remote name="opengapps" fetch="https://github.com/opengapps/"  />
+	<remote name="opengapps-gitlab" fetch="https://gitlab.opengapps.org/opengapps/"  />
+	<project path="vendor/opengapps/build" name="aosp_build" revision="master" remote="opengapps" />
+	<project path="vendor/opengapps/sources/all" name="all" clone-depth="1" revision="master" remote="opengapps-gitlab" />
+
+	  <!-- arm64 depends on arm -->
+	<project path="vendor/opengapps/sources/arm64" name="arm64" clone-depth="1" revision="master" remote="opengapps-gitlab" />
 </manifest>
