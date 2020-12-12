@@ -2,6 +2,7 @@
 <!--
      Copyright (C) 2016 The Android Open Source Project
      Copyright (C) 2016 The CyanogenMod Project
+     Copyright (C) 2020 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -17,18 +18,18 @@
 -->
 <manifest>
 	  <!-- Samsung vendor hardware code -->
-	<project path="vendor/samsung/gta4xl-common" name="gta4xl/android_vendor_samsung_gta4xl-common" remote="github" revision="lineage-18.0"/>
-	<project path="vendor/samsung/gta4xlwifi" name="gta4xl/android_vendor_samsung_gta4xlwifi" remote="github" revision="lineage-18.0"/>
-	<project path="vendor/samsung/slsi/sepolicy" name="gta4xl/android_device_samsung_slsi_sepolicy" remote="github" revision="lineage-18.0"/>
-	<project path="hardware/samsung" name="LineageOS/android_hardware_samsung" remote="github" revision="lineage-18.0"/>
-	<project path="device/samsung_slsi/sepolicy" name="gta4xl/android_device_samsung_slsi_sepolicy" remote="github" revision="lineage-18.0"/>
+	<project path="vendor/samsung/gta4xl-common" name="gta4xl/android_vendor_samsung_gta4xl-common" remote="github" revision="lineage-18.1"/>
+	<project path="vendor/samsung/gta4xlwifi" name="gta4xl/android_vendor_samsung_gta4xlwifi" remote="github" revision="lineage-18.1"/>
+	<project path="vendor/samsung/slsi/sepolicy" name="gta4xl/android_device_samsung_slsi_sepolicy" remote="github" revision="lineage-18.1"/>
+	<project path="hardware/samsung" name="LineageOS/android_hardware_samsung" remote="github" revision="lineage-18.1"/>
+	<project path="device/samsung_slsi/sepolicy" name="gta4xl/android_device_samsung_slsi_sepolicy" remote="github" revision="lineage-18.1"/>
 	<project name="LineageOS/android_hardware_samsung_slsi_scsc_wifibt_wifi_hal" path="hardware/samsung_slsi/scsc_wifibt/wifi_hal" remote="github" revision="refs/heads/lineage-17.1"/>
         <project name="LineageOS/android_hardware_samsung_slsi_scsc_wifibt_wpa_supplicant_lib" path="hardware/samsung_slsi/scsc_wifibt/wpa_supplicant_lib" remote="github" revision="refs/heads/lineage-17.1"/>
 	<project name="LineageOS/android_hardware_samsung_slsi_fm" path="hardware/samsung_slsi/fm" remote="github" revision="refs/heads/lineage-17.1"/>
 	<project name="LineageOS/android_hardware_samsung_slsi_libbt" path="hardware/samsung_slsi/libbt" remote="github" revision="refs/heads/lineage-17.1"/>
 	
 	  <!-- gta4xlwifi -->
-	<project path="device/samsung/gta4xlwifi" name="gta4xl/android_device_samsung_gta4xlwifi" remote="github" revision="lineage-18.0"/>
-	<project path="device/samsung/gta4xl-common" name="gta4xl/android_device_samsung_gta4xl-common" remote="github" revision="lineage-18.0"/>
-	<project path="kernel/samsung/gta4xl" name="gta4xl/android_kernel_samsung_gta4xl" remote="github" revision="lineage-18.0"/>
+	<project path="device/samsung/gta4xlwifi" name="gta4xl/android_device_samsung_gta4xlwifi" remote="github" revision="lineage-18.1"/>
+	<project path="device/samsung/gta4xl-common" name="gta4xl/android_device_samsung_gta4xl-common" remote="github" revision="lineage-18.1"/>
+	<project path="kernel/samsung/gta4xl" name="gta4xl/android_kernel_samsung_gta4xl" remote="github" revision="lineage-18.1"/>
 </manifest>
