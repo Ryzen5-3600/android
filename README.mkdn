@@ -1,4 +1,4 @@
-How to compile LineageOS 18.0 for gta4xlwifi
+How to compile LineageOS 18.1 for gta4xlwifi
 ============================================
 
 nano ~/.bashrc
@@ -59,7 +59,7 @@ Then, run source ~/.profile to update your environment
                     
 cd ~/android/lineage                  
 
-repo init -u git://github.com/Ryzen5-3600/android.git -b lineage-18.0
+repo init -u git://github.com/Ryzen5-3600/android.git -b lineage-18.1
 
 (keep an eye on the terminal, because a message or 2 will pop up, follow what it says to continue on)
 
@@ -80,5 +80,5 @@ lunch lineage_gta4xlwifi-userdebug
 make -j4 bacon
 
 
-(If the build is successful, it will be found in: android/lineage/out/target/product/gta4xlwifi/lineage-18.0-xxxxxxxx-UNOFFICIAL-gta4xlwifi.zip)
-(note: xxxxxxxx is the date... example: 20201123)
+(If the build is successful, it will be found in: android/lineage/out/target/product/gta4xlwifi/lineage-18.1-xxxxxxxx-UNOFFICIAL-gta4xlwifi.zip)
+(note: xxxxxxxx is the date... example: 20201212)
