@@ -29,7 +29,7 @@
 	<project name="LineageOS/android_hardware_samsung_slsi_libbt" path="hardware/samsung_slsi/libbt" remote="github" revision="refs/heads/lineage-17.1"/>
 	
 	  <!-- gta4xlwifi -->
-	<project path="device/samsung/gta4xlwifi" name="gta4xl/android_device_samsung_gta4xlwifi" remote="github" revision="lineage-18.1"/>
-	<project path="device/samsung/gta4xl-common" name="gta4xl/android_device_samsung_gta4xl-common" remote="github" revision="lineage-18.1"/>
-	<project path="kernel/samsung/gta4xl" name="gta4xl/android_kernel_samsung_gta4xl" remote="github" revision="lineage-18.1"/>
+	<project path="device/samsung/gta4xlwifi" name="LineageOS/android_device_samsung_gta4xlwifi" remote="github" revision="lineage-18.1"/>
+	<project path="device/samsung/gta4xl-common" name="LineageOS/android_device_samsung_gta4xl-common" remote="github" revision="lineage-18.1"/>
+	<project path="kernel/samsung/gta4xl" name="LineageOS/android_kernel_samsung_gta4xl" remote="github" revision="lineage-18.1"/>
 </manifest>
