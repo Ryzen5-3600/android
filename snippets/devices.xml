@@ -22,10 +22,10 @@
 	<project path="vendor/samsung/slsi/sepolicy" name="LineageOS/android_device_samsung_slsi_sepolicy" remote="github" revision="lineage-18.1"/>
 	<project path="hardware/samsung" name="LineageOS/android_hardware_samsung" remote="github" revision="lineage-18.1"/>
 	<project path="device/samsung_slsi/sepolicy" name="LineageOS/android_device_samsung_slsi_sepolicy" remote="github" revision="lineage-18.1"/>
-	<project name="LineageOS/android_hardware_samsung_slsi_scsc_wifibt_wifi_hal" path="hardware/samsung_slsi/scsc_wifibt/wifi_hal" remote="github" revision="refs/heads/lineage-17.1"/>
-        <project name="LineageOS/android_hardware_samsung_slsi_scsc_wifibt_wpa_supplicant_lib" path="hardware/samsung_slsi/scsc_wifibt/wpa_supplicant_lib" remote="github" revision="refs/heads/lineage-17.1"/>
-	<project name="LineageOS/android_hardware_samsung_slsi_fm" path="hardware/samsung_slsi/fm" remote="github" revision="refs/heads/lineage-17.1"/>
-	<project name="LineageOS/android_hardware_samsung_slsi_libbt" path="hardware/samsung_slsi/libbt" remote="github" revision="refs/heads/lineage-17.1"/>
+	<project name="LineageOS/android_hardware_samsung_slsi_scsc_wifibt_wifi_hal" path="hardware/samsung_slsi/scsc_wifibt/wifi_hal" remote="github" revision="refs/heads/lineage-18.1"/>
+        <project name="LineageOS/android_hardware_samsung_slsi_scsc_wifibt_wpa_supplicant_lib" path="hardware/samsung_slsi/scsc_wifibt/wpa_supplicant_lib" remote="github" revision="refs/heads/lineage-18.1"/>
+	<project name="LineageOS/android_hardware_samsung_slsi_fm" path="hardware/samsung_slsi/fm" remote="github" revision="refs/heads/lineage-18.1"/>
+	<project name="LineageOS/android_hardware_samsung_slsi_libbt" path="hardware/samsung_slsi/libbt" remote="github" revision="refs/heads/lineage-18.1"/>
 	
 	  <!-- gta4xlwifi -->
 	<project path="device/samsung/gta4xlwifi" name="LineageOS/android_device_samsung_gta4xlwifi" remote="github" revision="lineage-18.1"/>
